@@ -1,0 +1,31 @@
+:root {
+  --text: hsl(200, 15%, 8%); // (Light Mode Text : Very-Dark-Blue)
+  --input: hsl(0, 0%, 52%); // (Light Mode Input)
+  --background: hsl(0, 0%, 98%); // (Light Mode Background)
+  --element: hsl(0, 0%, 100%); // (Dark Mode Text & Light Mode Elements)
+  --headerShadow: hsl(0, 0%, 90%);
+  --shadow: hsl(0, 0%, 60%);
+}  
+
+// dark mode
+.darkmode {
+  --text: hsl(0, 0%, 100%); // (Dark Mode Text & Light Mode Elements)
+  --input: hsl(0, 0%, 100%); 
+  --element: hsl(209, 23%, 22%); // (Dark Mode Elements)
+  --background: hsl(207, 26%, 17%); // (Dark Mode Background)
+  --headerShadow: hsl(0, 0%, 15%);
+  --shadow: hsl(0, 0%, 0%);
+}
+
+$font-sm: 0.875rem; // 14px/16px
+$font-md: 1.125rem; // 18px/16px
+$font-lg: 2.25rem;
+$font-xlg: 3.25rem;
+
+
+@import 'mixins';
+@import 'header';
+@import 'globals';
+@import 'countries';
+@import 'countrydetails';
+@import 'loading';
