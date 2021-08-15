@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Country = ({filtered, onClick, countries, link}) => {
 
-  const bc = countries.filter(b => filtered[0].borders.includes(b.alpha3Code))
+  // const bc = countries.filter(b => filtered[0].borders.includes(b.alpha3Code))
 
   return (
     <section className="details-view">

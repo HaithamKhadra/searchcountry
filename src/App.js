@@ -85,30 +85,3 @@ const App = () => {
 }
 
 export default App;
-
-//     <div className="App">
-//       <Switch>
-//         {/* <Route path='/' exact component={Home}/> */}
-//         <Route path='/country' component={Country}/>
-//       </Switch>
-
-//     </div>
-
-// function App() {
-  //   return (
-//    /* everything inside Router is going to have the ability to use routing */
-//     <Router>
-//         <div className="App">
-//           <header className="App-header">
-//             <Switch>
-//               <Route path='/' exact component={Home}/>
-//               <Route path='/country' component={Country}/>
-//             </Switch>
-//             <Link to='/country'>
-//               <button>Go to country</button>
-//             </Link>
-//           </header>
-//         </div>
-//     </Router>
-//   );
-// }

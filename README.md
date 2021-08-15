@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Countries (REST API)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This is a [FrontendMentor.io]() coding challenge, where I was provided with a design and my job was to get it looking as close to that design as possible.
 
-In the project directory, you can run:
+The used this challenge to test my ability in working with a REST API and practice handling JavaScipt promises.
 
-### `npm start`
+Visitors of this Web app are able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- view the optimal layout for the site depending on their device's screen size.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- See all countries from the API on the homepage.
 
-### `npm test`
+- Search for a country using an input field.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Filter countries by region.
 
-### `npm run build`
+- Click on a country to see more detailed information on a separate page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Toggle the color scheme between light and dark mode.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Lessons Learned
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- I am Know very comfortable working with API, interm of fetching for data and handling promises using JavaScript and React library.
 
-### `npm run eject`
+- This Challenge helped me get a good grasp about the way React work, which was a confusing concept for me before venturing into this coding challenge.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- This was my first attempt at deploying a website into a hosting service ([vercel](https://vercel.com)), usually I only deployed my projects into gh-pages.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Responsive design.
+- Mobile navigation toggle.
+- Data fetched from [REST Countries API](https://restcountries.eu/).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Tech Stack
 
-## Learn More
+- ### Tools used on the **Client side:** 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - **HTML**
+  - **SASS (SCSS)** - **CSS**
+  - **Javascript (ES6+)** - **React** - **React Router**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Screenshots
 
-### Code Splitting
+### Mobile: selected country information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Mobile: selected country information](https://raw.githubusercontent.com/HaithamKhadra/searchcountry/main/readmeImages/mobile-selected.jpg)
 
-### Analyzing the Bundle Size
+### Mobile: filtered by Region
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Mobile: filtered by Region](https://raw.githubusercontent.com/HaithamKhadra/searchcountry/main/readmeImages/mobile-filteredByRegion.jpg)
 
-### Making a Progressive Web App
+### Desktop: all countries 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Desktop all countries](https://raw.githubusercontent.com/HaithamKhadra/searchcountry/main/readmeImages/desktop-all.jpg)
 
-### Advanced Configuration
+### Desktop: Selected country information 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Desktop design screenshot](https://raw.githubusercontent.com/HaithamKhadra/searchcountry/main/readmeImages/desktop-selected.jpg)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Links
+
+### [live Demo](https://countries-fem.vercel.app)
+[Frontend Mentor | REST Countries API with color theme switcher](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca)
+
+
+
+
