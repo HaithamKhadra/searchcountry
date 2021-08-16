@@ -1,5 +1,13 @@
 # Countries (REST API)
 
+## Table of Content
+ - [Introduction](#introduction)
+ - [Lessons Learned](#lessons-learned)
+ - [Features](#features)
+ - [Tech Stack](#tech-stack)
+ - [Screenshots](#screenshots)
+ - [Links](#links)
+
 ## Introduction
 
 This is a [FrontendMentor.io]() coding challenge, where I was provided with a design and my job was to get it looking as close to that design as possible.
