@@ -11,7 +11,7 @@ const Countries = ({search, filtered, onClick, onChange, onChangeSelect}) => {
         filtered.length > 0 
         ? filtered.map((country,i) => 
             <div className="country-card" key={i}>
-              <Link to='/details'>
+              <Link to={`/details/${country.name}`}>
                 <div onClick={onClick} data-val={country.name} className="flag-image">
                   <img src={country.flag} alt="flag"/>
                 </div>

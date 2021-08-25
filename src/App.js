@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
@@ -66,7 +66,7 @@ const App = () => {
           {
             filtered.length === 1
             ? <Route 
-                path='/details'
+                path='/details/:name'
                 render={() => (
                   <Country 
                     countries={countries}
@@ -78,6 +78,7 @@ const App = () => {
                 />            
             : <h1>Error 404</h1>
           }
+          <Redirect to="/" />
         </Switch>
       </Router>
     </div>
