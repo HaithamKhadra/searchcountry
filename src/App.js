@@ -32,9 +32,8 @@ const App = () => {
       .get('https://restcountries.com/v2/all')
       .then(res => {
         setcountries(res.data)
-        console.log(countries);
       })
-  }, [])
+  }, [search])
   
   const filtered = 
     countries
