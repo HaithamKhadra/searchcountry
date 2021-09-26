@@ -13,13 +13,13 @@ const Countries = ({search, filtered, onClick, onChange, onChangeSelect}) => {
             <div className="country-card" key={i}>
               <Link to={`/details/${country.name}`}>
                 <div onClick={onClick} data-val={country.name} className="flag-image">
-                  <img src={country.flag} alt="flag"/>
+                  <img src={country.flags[1]} alt="flag"/>
                 </div>
               </Link>
               <div className="general-info">
                 <h4>{country.name}</h4>
                 <div><span>Population:</span> {country.population.toLocaleString()}</div>
-                <div><span>Region:</span> {country.region}</div>
+                <div><span>Region:</span> {country.continent}</div>
                 <div><span>Capital:</span> {country.capital}</div>
               </div>
           </div>)

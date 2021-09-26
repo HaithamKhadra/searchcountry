@@ -15,13 +15,13 @@ const Country = ({filtered, onClick, countries, link}) => {
       
       <div className="details-container">
         <div className="big-flag-image">
-          <img src={filtered[0].flag} alt="flag"/>
+          <img src={filtered[0].flags[1]} alt="flag"/>
         </div>
         <h2>{filtered[0].name}</h2>
         <div className="details-box-1">
           <div><span>Native Name: </span>{filtered[0].nativeName}</div>
           <div><span>Population: </span>{filtered[0].population.toLocaleString()}</div>
-          <div><span>Region: </span>{filtered[0].region}</div>
+          <div><span>Region: </span>{filtered[0].continent}</div>
           <div><span>Sub Region: </span>{filtered[0].subregion}</div>
           <div><span>Capital: </span>{filtered[0].capital}</div>
         </div>
