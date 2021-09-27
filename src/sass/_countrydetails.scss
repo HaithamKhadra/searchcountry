@@ -48,48 +48,55 @@
   }
 
   @include breakpoint-up(large) {
-    padding: 2.5rem 2.5rem 45px;
+
+    padding: 2.5rem 2.5rem 0px;
 
     .button {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
 
     .details-container {
-      // display: flex;
-      // justify-content: space-between;
-
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      // grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 85%;
       grid-column-gap: 50px;
       grid-row-gap: 25px;
 
+      .description {
+        display: grid; 
+        grid-template-columns: 1.4fr 1.5fr; 
+        grid-template-rows: 0.4fr 1.6fr; 
+        gap: 25px 0px; 
+        grid-template-areas: 
+          "country-name country-name"
+          "details-box-1 details-box-2"; 
+      }
         
       .big-flag-image { 
-        grid-area: 1 / 1 / 5 / 2; 
+        grid-area: 1 / 1 / 2; 
       }
 
-      h2 { 
-        grid-area: 1 / 2 / 2 / 8; 
+      .country-name { 
+        grid-area: country-name; 
         margin: 3rem 0 0;
       }
 
       span {
-        font-size: 1.125rem;
+        font-size: 2.125rem;
       }
       
       .details-box-1 { 
-        grid-area: 2 / 2 / 4 / 4; 
-        font-size: 0.975rem;
+        grid-area: details-box-1; 
+        font-size: 1.975rem;
       }
       .details-box-2 { 
-        grid-area: 2 / 4 / 4 / 6; 
-        font-size: 0.975rem;
+        grid-area: details-box-2; 
+        font-size: 1.975rem;
       }
 
       .big-flag-image {
-        width: fit-content;
-        height: fit-content;
+        width: 100%;
+        height: 100%;
         // margin-bottom: 15px;
   
         img {

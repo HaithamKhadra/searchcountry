@@ -33,7 +33,7 @@ const App = () => {
       .then(res => {
         setcountries(res.data)
       })
-  }, [search])
+  }, [region])
   
   const filtered = 
     countries

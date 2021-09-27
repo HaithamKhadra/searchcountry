@@ -18,28 +18,21 @@
 
 .header {
   height: 5rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0 1rem;
-  -webkit-box-shadow: 0px 2px 4px 0px var(--headerShadow);
-          box-shadow: 0px 2px 4px 0px var(--headerShadow);
+  box-shadow: 0px 2px 4px 0px var(--headerShadow);
   background: var(--element);
 }
 
 .header h1 {
   width: 70%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   font-size: 1rem;
   font-weight: 800;
 }
 
 .header .button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   background: transparent;
   color: var(--text);
   border: none;
@@ -64,13 +57,11 @@
 
 html {
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body, .app {
@@ -94,34 +85,23 @@ a, a:visited, a:hover {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .flex__column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-js-sb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flex-js-c {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .flex-ai-c {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .button:focus-visible, a:focus-visible {
@@ -129,10 +109,7 @@ a, a:visited, a:hover {
 }
 
 .countries {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .countries .filters {
@@ -151,8 +128,7 @@ a, a:visited, a:hover {
   text-indent: 25%;
   border: none;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 6px 0px var(--headerShadow);
-          box-shadow: 0px 0px 6px 0px var(--headerShadow);
+  box-shadow: 0px 0px 6px 0px var(--headerShadow);
   color: var(--input);
   background: var(--element);
 }
@@ -179,8 +155,7 @@ a, a:visited, a:hover {
   background: var(--element);
   border: none;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 6px 0px var(--headerShadow);
-          box-shadow: 0px 0px 6px 0px var(--headerShadow);
+  box-shadow: 0px 0px 6px 0px var(--headerShadow);
 }
 
 .countries .filters .select-region:focus-visible {
@@ -201,8 +176,7 @@ a, a:visited, a:hover {
   border-radius: 6px;
   background: var(--element);
   margin-bottom: 2.625rem;
-  -webkit-box-shadow: 0px 0px 6px 0px var(--headerShadow);
-          box-shadow: 0px 0px 6px 0px var(--headerShadow);
+  box-shadow: 0px 0px 6px 0px var(--headerShadow);
 }
 
 .countries .countries-container .country-card .flag-image {
@@ -240,12 +214,8 @@ a, a:visited, a:hover {
 @media screen and (min-width: 64em) {
   .countries .filters {
     padding: 2.5rem 2.5rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     height: 5.625rem;
     margin-bottom: 3rem;
   }
@@ -265,28 +235,22 @@ a, a:visited, a:hover {
   }
   .countries .filters .select-region {
     width: 20%;
-    -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
     margin: 0;
     padding: 0 1rem;
     font-size: 1rem;
   }
   .countries .countries-container {
     padding: 0 2.5rem 2rem;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 3rem;
     grid-row-gap: 0px;
   }
   .countries .countries-container .country-card {
     margin-bottom: 2.625rem;
-    -webkit-box-shadow: 0px 0px 6px 0px var(--headerShadow);
-            box-shadow: 0px 0px 6px 0px var(--headerShadow);
+    box-shadow: 0px 0px 6px 0px var(--headerShadow);
   }
 }
 
@@ -301,8 +265,7 @@ a, a:visited, a:hover {
   background: var(--element);
   border: none;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 5px 0px var(--shadow);
-          box-shadow: 0px 0px 5px 0px var(--shadow);
+  box-shadow: 0px 0px 5px 0px var(--shadow);
   color: var(--text);
   cursor: pointer;
 }
@@ -315,8 +278,7 @@ a, a:visited, a:hover {
   width: 100%;
   height: 225px;
   margin-bottom: 3rem;
-  -webkit-box-shadow: 0 0 10px 2px var(--shadow);
-          box-shadow: 0 0 10px 2px var(--shadow);
+  box-shadow: 0 0 10px 2px var(--shadow);
 }
 
 .details-view .details-container .big-flag-image img {
@@ -341,59 +303,45 @@ a, a:visited, a:hover {
 
 @media screen and (min-width: 64em) {
   .details-view {
-    padding: 2.5rem 2.5rem 45px;
+    padding: 2.5rem 2.5rem 0px;
   }
   .details-view .button {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   .details-view .details-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85%;
     grid-column-gap: 50px;
     grid-row-gap: 25px;
   }
-  .details-view .details-container .big-flag-image {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-area: 1 / 1 / 5 / 2;
+  .details-view .details-container .description {
+    display: grid;
+    grid-template-columns: 1.4fr 1.5fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 25px 0px;
+    grid-template-areas: "country-name country-name" "details-box-1 details-box-2";
   }
-  .details-view .details-container h2 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 6;
-    grid-area: 1 / 2 / 2 / 8;
+  .details-view .details-container .big-flag-image {
+    grid-area: 1 / 1 / 2;
+  }
+  .details-view .details-container .country-name {
+    grid-area: country-name;
     margin: 3rem 0 0;
   }
   .details-view .details-container span {
     font-size: 1.125rem;
   }
   .details-view .details-container .details-box-1 {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-area: 2 / 2 / 4 / 4;
+    grid-area: details-box-1;
     font-size: 0.975rem;
   }
   .details-view .details-container .details-box-2 {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 2;
-    grid-area: 2 / 4 / 4 / 6;
+    grid-area: details-box-2;
     font-size: 0.975rem;
   }
   .details-view .details-container .big-flag-image {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   .details-view .details-container .big-flag-image img {
@@ -403,25 +351,12 @@ a, a:visited, a:hover {
   }
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -434,8 +369,7 @@ a, a:visited, a:hover {
   height: 50px;
   border: 0.375rem solid rgba(0, 0, 0, 0.4);
   border-top-color: #000;
-  -webkit-animation: spin 1s infinite linear;
-          animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
 }
 
 @media screen and (min-width: 64em) {
@@ -445,4 +379,8 @@ a, a:visited, a:hover {
     left: 50%;
     margin: 0 auto;
   }
+}
+
+.app {
+  height: 100vh;
 }
