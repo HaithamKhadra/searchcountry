@@ -15,7 +15,7 @@ const Country = ({filtered, onClick, countries, link}) => {
       
       <div className="details-container">
         <div className="big-flag-image">
-          <img src='https://restcountries.com/data/afg.svg' alt="flag"/>
+          <img src={`https://restcountries.com/data/${filtered[0].alpha3Code.toLowerCase()}.svg`} alt="flag"/>
         </div>
 
         <div className="description">
