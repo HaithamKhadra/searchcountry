@@ -10,19 +10,19 @@ const Countries = ({search, filtered, onClick, onChange, onChangeSelect}) => {
       {
         filtered.length > 0 
         ? filtered.map((country,i) => 
-            <div className="country-card" key={i}>
-              <Link to={`/details/${country.name}`}>
-                <div onClick={onClick} data-val={country.name} className="flag-image">
-                  <img src={country.flags[0]} alt="flag"/>
+            <div data-value={country.name} className="country-card" key={i}>
+                <div className="flag-image">
+                  <img src='https://restcountries.com/data/afg.svg' alt={`flag of ${country.name}`}/>
                 </div>
+              <Link to={`/details`}>
+                  <div data-value={country.name} onClick={onClick} className="general-info">
+                    <h4>{country.name}</h4>
+                    <div><span>Population:</span> {country.population.toLocaleString()}</div>
+                    <div><span>Region:</span> {country.region}</div>
+                    <div><span>Capital:</span> {country.capital}</div>
+                  </div>
               </Link>
-              <div className="general-info">
-                <h4>{country.name}</h4>
-                <div><span>Population:</span> {country.population.toLocaleString()}</div>
-                <div><span>Region:</span> {country.continent}</div>
-                <div><span>Capital:</span> {country.capital}</div>
-              </div>
-          </div>)
+              </div>)
         // : filtered.length > 25
         //   ? <div>too much countries</div>
         : filtered.length === 0

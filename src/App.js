@@ -8,7 +8,7 @@ import Country from './components/Country';
 
 
 const App = () => {
-
+  
   const [countries, setcountries] = useState([])
   const [region, setRegion] = useState('')
   const [search, setSearch] = useState('')
@@ -19,17 +19,19 @@ const App = () => {
   }
 
   const link = (e) => {
-    const attr = e.target.parentNode.getAttribute("data-val");
+    const attr = e.target.parentNode.getAttribute("data-value");
     setSearch(attr);
+    console.log(attr);
   }
 
   const toggleDarkMode = () => {
     darkmode === 'darkmode' ? setDarkmode('') : setDarkmode('darkmode');
   }
 
+
   useEffect(() => {
     axios
-      .get('https://restcountries.com/v2/all')
+      .get('https://raw.githubusercontent.com/octanna/restcountries/master/src/main/resources/countriesV2.json')
       .then(res => {
         setcountries(res.data)
       })
@@ -41,7 +43,7 @@ const App = () => {
   
   const filteredByRegion = 
     countries
-    .filter(cou => cou.continent === region)
+    .filter(cou => cou.region === region)
     .filter(c => c.name.toLowerCase().includes(search.toLowerCase()))
 
   return (
@@ -66,7 +68,7 @@ const App = () => {
           {
             filtered.length === 1
             ? <Route 
-                path='/details/:name'
+                path='/details'
                 render={() => (
                   <Country 
                     countries={countries}
@@ -78,7 +80,6 @@ const App = () => {
                 />            
             : <h1>Error 404</h1>
           }
-          <Redirect to="/" />
         </Switch>
       </Router>
     </div>
