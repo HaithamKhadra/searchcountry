@@ -27,10 +27,13 @@ $font-xlg: 3.25rem;
 @import 'header';
 @import 'globals';
 @import 'countries';
+@import 'filter';
 @import 'countrydetails';
 @import 'loading';
 
 
-.app {
-  height: 100vh;
-}
+// .app {
+//   height: 100vh;
+//   flex-direction: column;
+
+// }

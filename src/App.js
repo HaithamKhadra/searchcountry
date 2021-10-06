@@ -8,12 +8,12 @@ import Country from './components/Country';
 
 
 const App = () => {
-  
+
   const [countries, setcountries] = useState([])
   const [region, setRegion] = useState('')
   const [search, setSearch] = useState('')
   const [darkmode, setDarkmode] = useState('')
-  
+
   const handleChange = (e) => {
     setSearch(e.target.value)
   }
@@ -21,7 +21,6 @@ const App = () => {
   const link = (e) => {
     const attr = e.target.parentNode.getAttribute("data-value");
     setSearch(attr);
-    console.log(attr);
   }
 
   const toggleDarkMode = () => {
@@ -36,48 +35,49 @@ const App = () => {
         setcountries(res.data)
       })
   }, [region])
-  
-  const filtered = 
+
+  const filtered =
     countries
-    .filter(cou => cou.name.toLowerCase().includes(search.toLowerCase()))
-  
-  const filteredByRegion = 
+      .filter(cou => cou.name.toLowerCase().includes(search.toLowerCase()))
+
+  const filteredByRegion =
     countries
-    .filter(cou => cou.region === region)
-    .filter(c => c.name.toLowerCase().includes(search.toLowerCase()))
+      .filter(cou => cou.region === region)
+      .filter(c => c.name.toLowerCase().includes(search.toLowerCase()))
 
   return (
-    <div className={`app flex__column ${darkmode}`}>
-      <Header heading='Where in the world?' darkmode={darkmode} toggleDarkMode={toggleDarkMode}/>
-           
+    <div className={`app ${darkmode}`}>
+      <Header heading='Where in the world?' toggleDarkMode={toggleDarkMode} btnClassName='header__button'/>
+
       <Router>
         <Switch>
           <Route
             path='/' exact
             render={() => (
-              <Countries 
-                onChangeSelect={(e) => {setRegion(e.target.value)}}
+              <Countries
+                onChangeSelect={(e) => { setRegion(e.target.value) }}
                 onChange={handleChange}
-                // onClick={(e) => {setSearch(e.target.dataset.val)}}
                 onClick={link}
                 search={search}
                 filtered={region === '' ? filtered : filteredByRegion}
               />
             )}
           />
+
           {
             filtered.length === 1
-            ? <Route 
+            ? <Route
                 path='/details'
                 render={() => (
-                  <Country 
+                  <Country
+                    btnClassName="country-details__button"
                     countries={countries}
                     link={link}
                     filtered={filtered}
-                    onClick={() => {setSearch(''); setRegion('')}}
+                    onClick={() => { setSearch(''); setRegion('') }}
                   />
                 )}
-                />            
+              />
             : <h1>Error 404</h1>
           }
         </Switch>

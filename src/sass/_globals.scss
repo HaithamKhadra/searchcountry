@@ -1,9 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
-// - Homepage Items: 14px
-// - Detail Page: 16px 
-
-
-// - Weights: 300, 600, 800
 
 html {
   font-size: 100%;
@@ -14,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-body , .app{
+body, .app{
   padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;  
@@ -32,15 +26,14 @@ h1,h2,h3,h4,h5,h6 {
 
 a, a:visited, a:hover {
   text-decoration: none;
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 
 .flex {
   display: flex;
-  
-  &__column {
-    flex-direction: column;
-  }
 
   &-js-sb {
     justify-content: space-between;
@@ -54,22 +47,3 @@ a, a:visited, a:hover {
     align-items: center;
   }
 }
-
-.button, a {
-  &:focus-visible {
-    outline: none;
-  }
-}
-// // visibility
-// .hide-for-mobile {
-//   // hide for medium and down
-//   @include breakpoint-down(small) {
-//     display: none;
-//   }
-// }
-
-// .hide-for-desktop {
-//   @include breakpoint-up(medium) {
-//     display: none;
-//   }
-// }

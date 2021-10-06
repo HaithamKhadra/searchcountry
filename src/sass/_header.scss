@@ -6,14 +6,14 @@
   background: var(--element);
   
 
-  h1 {
+  &__title {
     width: 70%;
     align-self: center;
     font-size: 1rem;
     font-weight: 800;
   }
 
-  .button {
+  &__button {
     // width: 6.5rem;
     align-self: center;
     background: transparent;
@@ -22,6 +22,10 @@
     border-radius: 5px;
     font-size: $font-sm;
     cursor: pointer;
+
+    &:focus-visible {
+      outline: none;
+    }
 
     .bi {
       padding-right: 5px;
@@ -32,7 +36,7 @@
     height: 4rem;
     padding: 0 2.5rem;
 
-    h1 {
+    &__title {
       font-size: 1.275rem;
     }
   }
