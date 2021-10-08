@@ -1,18 +1,19 @@
-
 html {
   font-size: 100%;
   box-sizing: border-box;
   height: 100vh;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;  
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.3;
@@ -25,19 +26,24 @@ body {
   min-height: 100%;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text);
   font-weight: 800;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   text-decoration: none;
   &:focus-visible {
     outline: none;
   }
 }
-
 
 .flex {
   display: flex;

@@ -13,7 +13,7 @@
     cursor: pointer;
 
     .bi {
-      padding-right: 8px;      
+      padding-right: 8px;
     }
   }
 
@@ -38,17 +38,16 @@
     color: var(--text);
   }
 
-  &__box-1, &__box-2 {
+  &__box-1,
+  &__box-2 {
     line-height: 2;
     margin-bottom: 2rem;
     color: var(--text);
   }
 
   @include breakpoint-up(large) {
-
     padding: 2.5rem 2.5rem 0px;
     height: calc(100vh - 65px);
-
 
     &__button {
       margin-bottom: 2rem;
@@ -60,27 +59,26 @@
       grid-template-rows: 85%;
       grid-column-gap: 50px;
       grid-row-gap: 25px;
-      
     }
-    
-    &__country-name { 
-      grid-area: country-name; 
+
+    &__country-name {
+      grid-area: country-name;
       margin: 3rem 0 0;
     }
-    
+
     &__infos {
       font-size: 1.25rem;
     }
-    
-    &__big-flag { 
-      grid-area: 1 / 1 / 2; 
+
+    &__big-flag {
+      grid-area: 1 / 1 / 2;
     }
 
     &__big-flag {
       width: 100%;
       min-height: 100%;
     }
-    
+
     &__big-flag-image {
       width: 100%;
       height: 100%;
@@ -88,22 +86,21 @@
     }
 
     &__description {
-      display: grid; 
-      grid-template-columns: 1.4fr 1.2fr; 
-      grid-template-rows: 0.7fr 1.3fr; 
-      gap: 25px 30px; 
-      grid-template-areas: 
+      display: grid;
+      grid-template-columns: 1.4fr 1.2fr;
+      grid-template-rows: 0.7fr 1.3fr;
+      gap: 25px 30px;
+      grid-template-areas:
         "country-name country-name"
-        "details-box-1 details-box-2"; 
+        "details-box-1 details-box-2";
     }
 
-
-    &__box-1 { 
-      grid-area: details-box-1; 
+    &__box-1 {
+      grid-area: details-box-1;
       font-size: 1.5rem;
     }
-    &__box-2 { 
-      grid-area: details-box-2; 
+    &__box-2 {
+      grid-area: details-box-2;
       font-size: 1.5rem;
     }
   }

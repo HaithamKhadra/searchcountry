@@ -1,10 +1,9 @@
 .header {
-  height: 5rem; // 80px 
+  height: 5rem; // 80px
   justify-content: space-between;
   padding: 0 1rem;
   box-shadow: 0px 2px 4px 0px var(--headerShadow);
   background: var(--element);
-  
 
   &__title {
     width: 70%;
