@@ -49,7 +49,7 @@ const App = () => {
     .filter((c) => c.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
-    <div className={`app ${darkmode}`}>
+    <div className={`app ${darkmode}`} data-testid='App-test'>
       <Header
         heading="Where in the world?"
         toggleDarkMode={toggleDarkMode}
